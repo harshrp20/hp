@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="topnav">
+  <a href="brand">Company Name</a>
+  <a href="#Menu 1">Menu Item 1</a> 
+  <a href="#Menu2">Menu Item 2</a>
+  <a href="#Menu3">Menu Item 2</a>
+  <a href="#Menu4">Menu Item 3</a>
+  <a class="logo"><i class="fa fa-fw fa-user"></i></a>
+  <div class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Search Here" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>You have received 7 problems statements from various administrators.</strong>
+  </div>
+</div>  
+<div id="wrapper">
+        
+    
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" style="margin-left:0;">
+                <li class="sidebar-brand">
+                    
+                        <a href="#menu-toggle"  id="menu-toggle" style="margin-top:20px;float:center;" > <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i></a> 
+                    
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"> </i> <span style="margin-left:10px;">Statement</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-play-circle-o" aria-hidden="true"> </i> <span style="margin-left:10px;">Projects</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-flask" aria-hidden="true"> </i> <span style="margin-left:10px;">Labs</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-font" aria-hidden="true"> </i> <span style="margin-left:10px;">Assets</span> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-laptop" aria-hidden="true"> </i> <span style="margin-left:10px;">Courses</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-group" aria-hidden="true"> </i> <span style="margin-left:10px;">Customers</span> </a>
+                </li>
+				<li>
+                    <a href="#"> <i class="fa fa-gear" aria-hidden="true"> </i> <span style="margin-left:10px;">Settings</span> </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+          <h2 class="mt-4">PROBLEM STATEMENT</h2>
+          <div class="row">
+            <label>Sort by</label>
+            <select name="state" id="state">
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>		
+	    <div class="container-fluid">
+          <div class="flex-item-1">
+		   <i class="fa fa-folder" style="font-size:48px;color:red"></i>
+            <div class="info">
+              <h1>18</h1>
+              <p>Open</p>
+            </div>
+          </div>
+          <div class="flex-item-2">
+		  <i class="fa fa-folder" style="font-size:48px;color:yellow"></i>
+            <div class="info">
+              <h1>12</h1>
+              <p>In-Progress</p>
+            </div>
+
+          </div>
+
+          <div class="flex-item-3">
+		  <i class="fa fa-folder" style="font-size:48px;color:blue"></i>
+            <div class="info">
+              <h1>23</h1>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+       
+<div id="table">
+        <table>
+            <thead>
+        
+                <tr>
+                    <th>Title</th>
+                    <th>Created By</th>
+                    <th>Category</th>
+                    <th>Importance</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                 </tr>
+                 
+                </thead>
+                <tbody>
+                 
+                 <tr>
+              
+                     <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>Researches of qualities throughout of research...</u></a></td>
+                     
+                     <td>Microsoft</td>
+                     <td>Public</td>
+                     <td><i class="fa fa-circle" style="color:red;"></i>Critical</td>
+                     <td>01-11-2020</td>
+					 <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                 
+                 </tr>
+                 <tr>
+                    <td><a href="#"><u>Consistency in the First Four steps of Research</u></a></td>
+                     
+                     <td>Google</td>
+                     <td>Private</td>
+                     <td><i class="fa fa-circle" style="color:red;"></i>Critical</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                </tr>
+                <tr>
+
+                   <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>NorthEastern U.S. urban juvenile detention centers</u></a></td>
+                     
+                     <td>Service Now</td>
+                     <td>Public</td>
+                     <td>Medium</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                   
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>These Three are the most important elements</u></a></td>
+                     
+                     <td>Google</td>
+                     <td>Private</td>
+                     <td>Low</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                </tr>
+                <tr>
+                    <td><a href="#"><u>The Development of rating scales to measure</u></a></td>
+                     
+                     <td>Adobe</td>
+                     <td>Private</td>
+                     <td>High</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>The Relationship between maternal employment</u></a></td>
+                     
+                     <td>Service Now</td>
+                     <td>Private</td>
+                     <td>Medium</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+                </tr>
+                <tr>
+                    <td><a href="#"><u>Johnson and Christensen section follows layout</u></a></td>
+                     
+                     <td>Google</td>
+                     <td>Public</td>
+                     <td>High</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-success">Closed</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+               </tr>
+               <tr>
+                   <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>Measure the quality of preschool literacy environment</u></a></td>
+                     
+                     <td>Adobe</td>
+                     <td>Public</td>
+                     <td>Low</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-success">Closed</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+               </tr>
+               <tr>
+                   <td><a href="#"><u>Researcher justified the need of her study center</u></a></td>
+                     
+                     <td>Service Now</td>
+                     <td>Private</td>
+                     <td><i class="fa fa-circle" style="color:red;"></i>Critical</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-danger">Open</button></td>
+                    <td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+               </tr>
+               <tr>
+                   <td><a href="#"><i class="fa fa-paperclip" style="font-size:24px"></i><u>Purpose statement, but it may be identified by other</u></a></td>
+                     
+                     <td>Microsoft</td>
+                     <td>Private</td>
+                     <td>High</td>
+                     <td>01-11-2020</td>
+                    <td><button type="button" class="btn btn-primary btn-warning">In-Progress</button></td>
+					<td><div class="dropdownlist">
+                        <button class="dropbtn">&#8942;</button>
+						<div class="dropdownlist-content">
+                          <a href="#">Assign Project</a>
+                          <a href="#">Assign Contact</a>
+                          <a href="#">Add Notes</a>
+                          <a href="view.html">View Notes</a>
+                          <a href="editprob.html">Edit</a>
+						  <a href="#">View</a>
+						  <a href="#">Copy</a>
+						  <a href="#">Delete</a>
+                        </div>
+                      </div>
+                      </td>
+               </tr>
+             </tbody>
+            </table>
+             </div>	
+<div class="row1">
+            <select name="state" id="state">
+              <option value="page">10/Page</option>
+            </select>
+</div>
+<div class="container">
+  <div class="bar">
+    <a href="#"><i class="fa fa-angle-double-left" style="font-size:24px;color:light-blue;"></i></a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">7</a>
+	<a href="#">8</a>
+	<a href="#"><i class="fa fa-angle-double-right" style="font-size:24px;color:light-blue;"></i></a>
+  </div>
+</div>			 
+</div>					
+</body>
+</html>
+
